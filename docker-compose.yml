@@ -31,6 +31,8 @@ services:
       - mysql
     ports:
       - 4040:80
+    volumes:
+      - pma-session-store:/sessions
 
 volumes:
   db-store: null

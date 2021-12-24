@@ -20,5 +20,8 @@ services:
     volumes:
       - db-store:/var/lib/mysql
 
+    ports:
+      - "4306:3306"
+
 volumes:
   db-store: null
